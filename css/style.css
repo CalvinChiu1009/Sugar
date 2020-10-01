@@ -2,32 +2,36 @@ body {
   background: #f5f5f5;
 }
 
-.wrap {
+.sign-up-wrap,
+.sign-in-wrap {
   margin: 0 auto;
-  width: 650px;
+  max-width: 650px;
 }
 
-.main {
-  width: 650px;
+.sign-up-form,
+.sign-in-form {
+  width: 100%;
   margin: 0 auto;
   font-family: Helvetica;
 }
 
-.main .title {
+.sign-up-form .title,
+.sign-in-form .title {
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 15px;
   font-weight: normal;
-  font-size: 2em;
 }
 
-.main form {
+.sign-up-form form,
+.sign-in-form form {
   max-width: 100%;
 }
 
-.main select {
+.sign-up-form select,
+.sign-in-form select {
   margin: 5px auto;
   width: 100%;
-  height: 60px;
+  height: 55px;
   text-align: center;
   text-align-last: center;
   border: 1px solid #e8e8e8;
@@ -35,88 +39,214 @@ body {
   font-size: 1em;
 }
 
-.main input {
+.sign-up-form input,
+.sign-in-form input {
   margin: 5px auto;
   width: 100%;
-  height: 60px;
+  height: 55px;
   letter-spacing: 2px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 20px;
+  padding-left: 15px;
   border: 1px solid #e8e8e8;
   border-radius: 5px;
   font-size: 1em;
 }
 
-.main .submit {
+.sign-up-form .submit,
+.sign-in-form .submit {
+  text-align: center;
+  text-align-last: center;
   background: #cf3f49;
   width: 100%;
-  height: 60px;
+  height: 55px;
   color: white;
   border: none;
   border-radius: 5px;
   margin-top: 13px;
+  position: relative;
+  cursor: pointer;
 }
 
-.main .submit span {
-  padding-right: 26px;
+.sign-up-form .submit span,
+.sign-in-form .submit span {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   font-size: 1.5em;
 }
 
-.main .submit .fas {
+.sign-up-form .submit .fas,
+.sign-in-form .submit .fas {
   float: left;
   font-size: 2em;
   padding-left: 10px;
 }
 
 @media (max-width: 768px) {
-  .main {
-    width: 569px;
+  .sign-up-form,
+  .sign-in-form {
+    width: 96%;
+    margin: 0 2%;
   }
 }
 
 @media (max-width: 568px) {
-  .main {
-    width: 500px;
+  .sign-up-form select,
+  .sign-up-form input,
+  .sign-in-form select,
+  .sign-in-form input {
+    height: 45px;
+    font-size: 0.8em;
+  }
+  .sign-up-form .submit,
+  .sign-in-form .submit {
+    height: 50px;
+    font-size: 0.8em;
   }
 }
 
-@media (max-width: 375px) {
-  .main {
-    width: 450px;
-  }
-}
-
-.footnote {
-  margin: 50px auto;
+.sign-up-footnote {
+  width: 100%;
+  margin: 45px auto 55px;
   letter-spacing: 2px;
   text-align: center;
   font-weight: lighter;
 }
 
-.footnote a {
+.sign-up-footnote a {
   color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
 }
 
-.footnote .login {
+.sign-up-footnote a:hover {
+  font-weight: normal;
+}
+
+.sign-up-footnote .login {
   font-size: 1.3em;
 }
 
-.footnote .login .login-link {
+.sign-up-footnote .login .login-link {
   color: #cf3f49;
+  text-decoration: none;
+  border-bottom: 1px solid #cf3f49;
 }
 
-.footnote .sign-up {
-  margin-top: 50px;
+.sign-up-footnote .login .login-link:hover {
+  font-weight: normal;
+}
+
+.sign-up-footnote .rwd-login,
+.sign-up-footnote .rwd-login-link {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .footnote {
+    width: 96%;
+    margin: 0 2%;
+  }
+}
+
+@media (max-width: 375px) {
+  .login {
+    display: none;
+  }
+  .sign-up-footnote .rwd-login {
+    display: initial;
+    margin: 0 2%;
+    width: 96%;
+    font-size: 1.3em;
+  }
+  .sign-up-footnote .rwd-login-link {
+    display: block;
+    width: 96%;
+    margin: 10px 2%;
+    padding: 10px 0;
+    background: #2894ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+.sign-in-footnote {
+  width: 100%;
+  margin: 45px auto 55px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.sign-in-footnote a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.sign-in-footnote a:hover {
+  font-weight: normal;
+}
+
+.sign-in-footnote .sign-up {
+  margin-top: 55px;
   font-size: 1.3em;
 }
 
-.footnote .sign-up .sign-up-link {
+.sign-in-footnote .sign-up .sign-up-link {
   color: #cf3f49;
+  text-decoration: none;
+  border-bottom: 1px solid #cf3f49;
 }
 
-.footnote .forget-password {
+.sign-in-footnote .sign-up .sign-up-link:hover {
+  font-weight: normal;
+}
+
+.sign-in-footnote .rwd-sign-up,
+.sign-in-footnote .rwd-sign-up-link {
+  display: none;
+}
+
+.sign-in-footnote .forget-password {
   color: #cf3f49;
   font-size: 1.3em;
+  text-decoration: none;
+  border-bottom: 1px solid #cf3f49;
+}
+
+@media (max-width: 768px) {
+  .sign-in-footnote .sign-in-footnote {
+    width: 96%;
+    margin: 0 2%;
+  }
+}
+
+@media (max-width: 375px) {
+  .sign-in-footnote .sign-up {
+    display: none;
+  }
+  .sign-in-footnote .rwd-sign-up {
+    display: initial;
+    margin: 0 2%;
+    width: 96%;
+    font-size: 1.3em;
+  }
+  .sign-in-footnote .rwd-sign-up-link {
+    display: block;
+    width: 96%;
+    margin: 10px 2%;
+    padding: 10px 0;
+    background: #2894ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .sign-in-footnote .forget-password {
+    font-size: 1em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
