@@ -1,0 +1,122 @@
+body {
+  background: #f5f5f5;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 650px;
+}
+
+.main {
+  width: 650px;
+  margin: 0 auto;
+  font-family: Helvetica;
+}
+
+.main .title {
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.main form {
+  max-width: 100%;
+}
+
+.main select {
+  margin: 5px auto;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  text-align-last: center;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.main input {
+  margin: 5px auto;
+  width: 100%;
+  height: 60px;
+  letter-spacing: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.main .submit {
+  background: #cf3f49;
+  width: 100%;
+  height: 60px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 13px;
+}
+
+.main .submit span {
+  padding-right: 26px;
+  font-size: 1.5em;
+}
+
+.main .submit .fas {
+  float: left;
+  font-size: 2em;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 569px;
+  }
+}
+
+@media (max-width: 568px) {
+  .main {
+    width: 500px;
+  }
+}
+
+@media (max-width: 375px) {
+  .main {
+    width: 450px;
+  }
+}
+
+.footnote {
+  margin: 50px auto;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.footnote a {
+  color: black;
+}
+
+.footnote .login {
+  font-size: 1.3em;
+}
+
+.footnote .login .login-link {
+  color: #cf3f49;
+}
+
+.footnote .sign-up {
+  margin-top: 50px;
+  font-size: 1.3em;
+}
+
+.footnote .sign-up .sign-up-link {
+  color: #cf3f49;
+}
+
+.footnote .forget-password {
+  color: #cf3f49;
+  font-size: 1.3em;
+}
+/*# sourceMappingURL=style.css.map */
